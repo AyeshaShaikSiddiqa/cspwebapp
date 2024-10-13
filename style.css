@@ -1,0 +1,282 @@
+/* General Body Styling */
+@font-face {
+  font-family: 'The Seasons';
+  src: url('fonts/TheSeasons.ttf') format('truetype'); /* Adjust the URL and format as necessary */
+}
+
+body {
+  background-color: black;
+  color: white;
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  /* Removed height: 100vh; to allow body to expand with content */
+  /* height: 100vh; */
+}
+
+.main-content.white-bg {
+  background-color: white !important; /* Set the background color to white */
+  background-image: none; /* Optional: Change text color for better readability */
+  color: black; /* ✅ Added for readability */
+}
+
+.white-bg {
+  background-color: white !important; /* Ensures the white background overrides other styles */
+}
+
+#st_viewport {
+  display: none;
+  background-color: rgb(62,148,236); /* Moved from .st_viewport */
+  color: rgb(27,30,36); /* Moved from .st_viewport */
+  margin: 20px 0; /* Moved from .st_viewport */
+  max-height: 500px;
+  overflow: auto;
+}
+
+#st_viewport.active { /* ✅ Added */
+  display: block;
+}
+
+#questionnaires-section {
+  display: none; /* Initially hidden */
+  background-color: white;
+  padding: 20px;
+  text-align: center;
+  border-radius: 8px; /* Optional rounded corners */
+  margin-top: 20px;
+  text-align: center;
+}
+
+#questionnaires-section.active {
+  display: block;
+}
+
+.image-display {
+  max-width: 100%;
+  height: auto;
+  max-height: 80vh;
+  margin: 20px auto;
+  display: block;
+}
+
+.main-content {
+  background-image: url('bg12.svg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top center;
+  color: white;
+  height: 100vh; 
+  border-top: 5px solid red;
+}
+
+/* Header Styling */
+header {
+  display: flex;
+  align-items: center;
+  background-color: black;
+  color: white;
+  padding: 0;
+}
+
+.department-title {
+  font-size: 48px;
+  font-weight: bold;
+  color: #a00000;
+  text-align: center;
+  font-family: 'Lora', 'Times New Roman', serif;
+}
+
+.project-title {
+  font-size: 32px;
+  font-weight: bold;
+  margin: 10px 0;
+  color: #000000;
+  text-align: center;
+  font-family: 'The Seasons', cursive;
+}
+
+.description {
+  font-size: 24px;
+  margin-top: 20px;
+  color: #eaeaeaed;
+  text-align: center;
+  font-family: 'Lora', serif;
+}
+
+header img {
+  margin-right: 20px;
+  width: 150px;
+  height: auto;
+}
+
+header h2 {
+  font-size: 40px;
+  margin: 0;
+  text-align: center;
+}
+
+header h3 {
+  margin: 0;
+  font-size: 20px;
+  text-align: center;
+}
+
+.college-address, .college-info {
+  font-size: 1.2em;
+  text-align: center;
+}
+
+/* General button styling */
+.animated-button {
+  background-color: #4CAF50;
+  color: rgb(0, 0, 0);
+  padding: 15px 20px;
+  text-align: center;
+  font-size: 16px;
+  margin: 10px;
+  cursor: pointer;
+  border: none;
+  border-radius: 8px;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.animated-button:hover {
+  background-color: #ffffff;
+  transform: scale(1.05);
+}
+
+.button-container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: row;
+  margin-top: 20px;
+}
+
+.dropdown {
+  position: relative;
+  margin-right: 20px;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 200px;
+  box-shadow: 0px 8px 16px rgba(0,0,0,0.2);
+  z-index: 1;
+  border-radius: 10px;
+  top: 100%;
+  left: 0;
+  transition: all 0.3s ease;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  border-radius: 8px;
+  transition: background-color 0.3s ease;
+}
+
+.dropdown-content a:hover {
+  background-color: #e2e2e2;
+  font-weight: bold;
+}
+
+.show {
+  display: block;
+}
+
+*{
+  margin: 0;
+  padding: 0; /* ✅ Corrected */
+  box-sizing: border-box;
+}
+
+h1{
+  font-weight: 400;
+}
+
+a{
+  color: inherit;
+}
+
+p{
+  margin-top: .7em;
+}
+
+.warning{
+  color: rgb(62,148,236);
+}
+
+.st_viewport{
+  max-height: 500px;
+  overflow: auto;
+  /* These styles have been moved to #st_viewport */
+}
+
+/* Removed redundant .st_viewport styles */
+
+/* ###  Table wrap */
+.st_wrap_table{
+  /* Add necessary styles if needed */
+}
+
+/* ##   header */
+.st_table_header{
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0px;
+  z-index: 1;
+  background-color: rgb(27,30,36);
+  color: rgb(220,220,220);
+}
+
+.st_table_header h2{
+  font-weight: 400;
+  margin: 0 20px;
+  padding: 20px 0 0;
+}
+
+.st_table_header .st_row{
+  color: rgba(220,220,220, .7);
+}
+
+.st_table_header .st_column{
+  /* Add necessary styles if needed */
+}
+
+/* ##  table */
+.st_table{
+  display: flex;
+  flex-direction: column;
+}
+
+/* #   row */
+.st_row{
+  display: flex;
+  margin: 0;
+}
+
+.st_table .st_row:nth-child(even){
+  background-color: rgba(0,0,0, .1)
+}
+
+/* #   column */
+.st_column{
+  padding: 10px 20px;
+}
+
+pre{
+  overflow: auto;
+}
+
+/* Sticky table styles */
+#st_viewport.active { /* ✅ Added */
+  display: block;
+}
+
+.st_wrap_table{
+  /* Add necessary styles if needed */
+}
