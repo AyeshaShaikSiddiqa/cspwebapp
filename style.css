@@ -9,13 +9,21 @@ body {
   color: white;
   font-family: 'Arial', sans-serif;
   margin: 0;
-  /* Removed height: 100vh; to allow body to expand with content */
-  /* height: 100vh; */
 }
-
+.main-content {
+  background-image: url('bg12.svg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top center;
+  color: white;
+  height: 100vh;
+ /* Allow height to adapt */
+  position: relative;
+  z-index: 1;
+  border-top: 5px solid red;
+}
 .main-content.white-bg {
   background-color: white !important; /* Set the background color to white */
-  background-image: none; /* Optional: Change text color for better readability */
   color: black; /* ✅ Added for readability */
 }
 
@@ -25,14 +33,18 @@ body {
 
 #st_viewport {
   display: none;
-  background-color: rgb(62,148,236); /* Moved from .st_viewport */
-  color: rgb(27,30,36); /* Moved from .st_viewport */
-  margin: 20px 0; /* Moved from .st_viewport */
+  background-color: rgb(62, 148, 236);
+  color: rgb(27, 30, 36);
+  margin: 20px 0;
   max-height: 500px;
   overflow: auto;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
 }
 
-#st_viewport.active { /* ✅ Added */
+#st_viewport.active {
   display: block;
 }
 
@@ -43,11 +55,18 @@ body {
   text-align: center;
   border-radius: 8px; /* Optional rounded corners */
   margin-top: 20px;
-  text-align: center;
+  margin-bottom: 20px;
+}
+#st_viewport {
+  margin-top: 100px;
 }
 
 #questionnaires-section.active {
   display: block;
+  margin-top: 100px;
+}
+#st_viewport {
+  padding-top: 40px;
 }
 
 .image-display {
@@ -58,14 +77,11 @@ body {
   display: block;
 }
 
-.main-content {
-  background-image: url('bg12.svg');
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: top center;
-  color: white;
-  height: 100vh; 
-  border-top: 5px solid red;
+
+
+.content {
+  position: relative;
+  z-index: 2;
 }
 
 /* Header Styling */
@@ -120,7 +136,8 @@ header h3 {
   text-align: center;
 }
 
-.college-address, .college-info {
+.college-address,
+.college-info {
   font-size: 1.2em;
   text-align: center;
 }
@@ -162,12 +179,12 @@ header h3 {
   position: absolute;
   background-color: #f9f9f9;
   min-width: 200px;
-  box-shadow: 0px 8px 16px rgba(0,0,0,0.2);
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
   z-index: 1;
   border-radius: 10px;
   top: 100%;
   left: 0;
-  transition: all 0.3s ease;
+  transition: opacity 0.3s ease, visibility 0.3s ease;
 }
 
 .dropdown-content a {
@@ -188,95 +205,147 @@ header h3 {
   display: block;
 }
 
-*{
+* {
   margin: 0;
   padding: 0; /* ✅ Corrected */
   box-sizing: border-box;
 }
 
-h1{
+h1 {
   font-weight: 400;
 }
 
-a{
+a {
   color: inherit;
 }
 
-p{
-  margin-top: .7em;
+p {
+  margin-top: 0.7em;
 }
 
-.warning{
-  color: rgb(62,148,236);
+.warning {
+  color: rgb(62, 148, 236);
 }
 
-.st_viewport{
-  max-height: 500px;
-  overflow: auto;
-  /* These styles have been moved to #st_viewport */
+/* Table Styles */
+.st_wrap_table {
+  overflow: hidden;
+  max-width: 100%;
+  background-color: #f9f9f9;
 }
 
-/* Removed redundant .st_viewport styles */
-
-/* ###  Table wrap */
-.st_wrap_table{
-  /* Add necessary styles if needed */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 20px 0;
+  font-family: 'Lora', serif; /* Use the same font as the header */
+  table-layout: fixed;
 }
 
-/* ##   header */
-.st_table_header{
-  position: -webkit-sticky;
-  position: sticky;
-  top: 0px;
-  z-index: 1;
-  background-color: rgb(27,30,36);
-  color: rgb(220,220,220);
+thead {
+  background-color: #4CAF50; /* Dark green background */
+  color: white;
 }
 
-.st_table_header h2{
-  font-weight: 400;
-  margin: 0 20px;
-  padding: 20px 0 0;
+th,
+td {
+  padding: 12px 15px; /* Add padding to table cells */
+  text-align: left; /* Align text to the left */
+  border: 1px solid #ddd; /* Add border to cells */
+  overflow: hidden; /* Prevent text overflow */
+  text-overflow: ellipsis; /* Show ellipsis for overflow text */
+  white-space: nowrap; /* Prevent text wrapping */
 }
 
-.st_table_header .st_row{
-  color: rgba(220,220,220, .7);
+tbody tr:nth-child(even) {
+  background-color: #f2f2f2; /* Light grey for even rows */
 }
 
-.st_table_header .st_column{
-  /* Add necessary styles if needed */
+tbody tr:hover {
+  background-color: #e1f7e1; /* Light green on hover */
+  cursor: pointer; /* Indicate that row is clickable */
 }
 
-/* ##  table */
-.st_table{
+th {
+  font-weight: bold;
+  text-transform: uppercase; /* Make header text uppercase */
+}
+
+td {
+  font-size: 14px; /* Adjust font size for table cells */
+}
+
+/* Media Queries for Responsive Design */
+@media (max-width: 768px) {
+  table {
+    font-size: 12px; /* Reduce font size on smaller screens */
+  }
+
+  th,
+  td {
+    padding: 8px; /* Adjust padding for smaller screens */
+  }
+}
+
+#gallery-section {
+  text-align: center;
+  display: none;
+}
+
+#gallery-section h2 {
+  margin: 0px;
+  padding: 20px 0;
+}
+
+.gallery-section {
+  display: none; /* Initially hidden */
+  padding: 20px;
+}
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 columns */
+  gap: 20px; /* Space between images */
+}
+
+.photo {
+  text-align: center; /* Center captions */
+}
+
+.photo img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px; /* Optional: Rounded corners */
+}
+.team-container {
   display: flex;
-  flex-direction: column;
+  justify-content: center;
+  margin-top: 20px;
+}
+#about-team {
+  text-align: center; /* Center text horizontally */
+  margin-top: 20px; /* Optional: Adds some space above the section */
 }
 
-/* #   row */
-.st_row{
-  display: flex;
-  margin: 0;
+#about-team h2 {
+  font-size: 2em; /* Optional: Adjusts the font size */
+  margin-bottom: 20px; /* Optional: Adds space below the heading */
 }
 
-.st_table .st_row:nth-child(even){
-  background-color: rgba(0,0,0, .1)
+.team-member {
+  margin: 0 15px;
+  text-align: center;
 }
 
-/* #   column */
-.st_column{
-  padding: 10px 20px;
+.team-image {
+  width: 150px; /* Size of the circular image */
+  height: 150px; /* Size of the circular image */
+  border-radius: 50%; /* Makes the image circular */
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.8); /* White glow effect */
+  transition: transform 0.3s; /* Animation effect on hover */
+  border: 5px solid white; /* Add a solid white border for contrast */
 }
 
-pre{
-  overflow: auto;
-}
-
-/* Sticky table styles */
-#st_viewport.active { /* ✅ Added */
-  display: block;
-}
-
-.st_wrap_table{
-  /* Add necessary styles if needed */
+.team-image:hover {
+  transform: scale(1.05); /* Slightly enlarge image on hover */
 }

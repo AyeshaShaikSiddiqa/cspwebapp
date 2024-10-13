@@ -32,12 +32,12 @@
       <div class="dropdown">
         <button class="animated-button" id="menu-btn">Menu</button>
         <div class="dropdown-content" id="dropdown-content">
-          <a href="#" >Questionnaires</a>
-          <a href="#">Survey Details</a>
-          <a href="#">Photos</a>
-          <a href="#">Recommendations</a>
-          <a href="#">Suggestions</a>
-          <a href="#">About the Team</a>
+          <a href="#" id="questionnarie-link" >Questionnaires</a>
+          <a href="#" id ="survey-link" >Survey Details</a>
+          <a href="#" id ="photos-link">Photos</a>
+          <a href="#" id="recommendations-link">Recommendations</a>
+          <a href="#" id="suggestions-link">Suggestions</a>
+          <a href="#" id="about-team-link">About the Team</a>
         </div>
       </div>
 
@@ -50,370 +50,240 @@
     <p class="description">Nurturing career paths for Xth Grade</p>
 
     <!-- About Project Content (Initially Hidden) -->
-    <div class="about-content" id="about-content" style="display: none;">
+    <div  id="about-content" style="display: none;">
       <h2>ABSTRACT</h2>
       <p>In simple terms, the community service project endeavors to support 10th grade students in their journey towards meaningful career exploration and development...</p>
       
       <!-- Back Button -->
       <button class="animated-button" id="back-btn">Back</button>
     </div>
+    <div id="gallery-section" class="gallery-section">
+      <h2>Photo Gallery</h2>
+      <div class="gallery">
+          <div class="photo">
+              <img src="PIC11.jpg" alt="Photo 1">
+              <p>Xth Section - A</p>
+          </div>
+          <div class="photo">
+              <img src="2.jpg" alt="Photo 2">
+              <p>Xth Section - A</p>
+          </div>
+          <div class="photo">
+              <img src="3.jpg" alt="Photo 3">
+              <p>Xth Section - A</p>
+          </div>
+          <div class="photo">
+              <img src="4.jpg" alt="Photo 4">
+              <p>Xth Section - B</p>
+          </div>
+          <div class="photo">
+              <img src="PIC8.jpg" alt="Photo 5">
+              <p>Xth Section - B</p>
+          </div>
+          <div class="photo">
+              <img src="6.jpg" alt="Photo 6">
+              <p>Xth Section - B</p>
+          </div>
+          <div class="photo">
+              <img src="7.jpg" alt="Photo 7">
+              <p>Xth Section - C</p>
+          </div>
+          <div class="photo">
+              <img src="PIC7.jpg" alt="Photo 8">
+              <p>Xth Section - C</p>
+          </div>
+          <div class="photo">
+              <img src="5.jpg" alt="Photo 9">
+              <p>Xth Section - C</p>
+          </div>
+          <div class="photo">
+              <img src="PIC9.jpg" alt="Photo 10">
+              <p>Filling up of form with students</p>
+          </div>
+          <div class="photo">
+            <img src="1.jpg" alt="Photo 11">
+            <p>Filling up of form with students</p>
+          </div>
+          <div class="photo">
+            <img src="1.jpg" alt="Photo 11">
+            <p>Filling up of form with students</p>
+          </div>
+      </div>
+  </div>
 
     </section>
-    <section id="questionnaires-section" class="hidden">
+  <section id="questionnaires-section" class="hidden">
       <img src="questionnarie.png" alt="Questionnaires Images" class="image-display">
-    </section>
-    <section id="st_viewport" class="hidden">
-      <div class="st_wrap_table" data-table_id="0">
-        <header class="st_table_header">
-          <h2>Table header one</h2>
-          <div class="st_row">
-            <div class="st_column _rank">Rank</div>
-            <div class="st_column _name">Name</div>
-            <div class="st_column _surname">Surname</div>
-            <div class="st_column _year">Year</div>
-            <div class="st_column _section">Section</div>
-          </div>
-        </header>
-        <div class="st_table">
-          <div class="st_row">
-            <div class="st_column _rank">0</div>
-            <div class="st_column _name">John</div>
-            <div class="st_column _surname">Doe</div>
-            <div class="st_column _year">1973</div>
-            <div class="st_column _section">Germany</div>
-          </div>
-          <div class="st_row">
-            <div class="st_column _rank">0</div>
-            <div class="st_column _name">Max</div>
-            <div class="st_column _surname">Luke</div>
-            <div class="st_column _year">1971</div>
-            <div class="st_column _section">USA</div>
-          </div>
-          <div class="st_row">
-            <div class="st_column _rank">0</div>
-            <div class="st_column _name">Jonas</div>
-            <div class="st_column _surname">Kunze</div>
-            <div class="st_column _year">2015</div>
-            <div class="st_column _section">Germany</div>
-          </div>
-          <div class="st_row">
-            <div class="st_column _rank">0</div>
-            <div class="st_column _name">Janina</div>
-            <div class="st_column _surname">Endres</div>
-            <div class="st_column _year">1955</div>
-            <div class="st_column _section">Belgium</div>
-          </div>
-          <div class="st_row">
-            <div class="st_column _rank">0</div>
-            <div class="st_column _name">Lena</div>
-            <div class="st_column _surname">Eifel</div>
-            <div class="st_column _year">1996</div>
-            <div class="st_column _section">Germany</div>
-          </div>
-          <div class="st_row">
-            <div class="st_column _rank">0</div>
-            <div class="st_column _name">Jonas</div>
-            <div class="st_column _surname">Nacht</div>
-            <div class="st_column _year">1968</div>
-            <div class="st_column _section">Swiss</div>
-          </div>
-          <div class="st_row">
-            <div class="st_column _rank">0</div>
-            <div class="st_column _name">Vanessa</div>
-            <div class="st_column _surname">Schneider</div>
-            <div class="st_column _year">2004</div>
-            <div class="st_column _section">Russia</div>
-          </div>
-          <div class="st_row">
-            <div class="st_column _rank">0</div>
-            <div class="st_column _name">laura</div>
-            <div class="st_column _surname">Beike</div>
-            <div class="st_column _year">1952</div>
-            <div class="st_column _section">Sweden</div>
-          </div>
-        </div>
+  </section>
+  <section id="st_viewport" class="hidden">
+      <div class="st_wrap_table" data-table_id="0" id ="table-content">
+        <table>
+          <thead>
+              <tr>
+                  <th>Name with Initial</th>
+                  <th>Section</th>
+                  <th>Aadhar Number</th>
+                  <th>Favourite Subject</th>
+                  <th>Desired Career Path</th>
+                  <th>Reason for Career Choice</th>
+                  <th>Session Helpful?</th>
+                  <th>Change in Career Path?</th>
+                  <th>New Learnings from Session</th>
+                  <th>Plan after 10th</th>
+                  <th>Session Helpfulness Rating</th>
+              </tr>
+          </thead>
+          <tbody>
+              <tr>
+                  <td>M. Vasavi</td>
+                  <td>A</td>
+                  <td>400670156033</td>
+                  <td>Chemistry</td>
+                  <td>Nothing</td>
+                  <td>Some Technology</td>
+                  <td>Yes</td>
+                  <td>No</td>
+                  <td>Jobs</td>
+                  <td>3</td>
+              </tr>
+              <tr>
+                  <td>P. Saila Bhanu</td>
+                  <td>D</td>
+                  <td>254687934567</td>
+                  <td>Physics</td>
+                  <td>Engineer</td>
+                  <td>For Good Life</td>
+                  <td>Yes</td>
+                  <td>No</td>
+                  <td>Different Career Paths or Opportunities</td>
+                  <td>Further Study</td>
+                  <td>5</td>
+              </tr>
+              <tr>
+                  <td>S. Navya</td>
+                  <td>D</td>
+                  <td>356129582645</td>
+                  <td>Physics</td>
+                  <td>Engineer</td>
+                  <td>More Salaries</td>
+                  <td>Maybe</td>
+                  <td>No</td>
+                  <td>Various Career Paths</td>
+                  <td>Further Study</td>
+                  <td>5</td>
+              </tr>
+              <tr>
+                  <td>Kusumitha Valluru</td>
+                  <td>A</td>
+                  <td>274208367650</td>
+                  <td>English</td>
+                  <td>IPS</td>
+                  <td>To Improve in My Career</td>
+                  <td>Yes</td>
+                  <td>Yes</td>
+                  <td>To Improve My Career</td>
+                  <td>Further Study</td>
+                  <td>5</td>
+              </tr>
+              <tr>
+                  <td>Punnuru Hasini</td>
+                  <td>A</td>
+                  <td>247428655308</td>
+                  <td>Biology</td>
+                  <td>Doctor</td>
+                  <td>NIL</td>
+                  <td>Yes</td>
+                  <td>No</td>
+                  <td>Jobs Through BiPC</td>
+                  <td>Further Study</td>
+                  <td>5</td>
+              </tr>
+              <tr>
+                  <td>Shaik Thajveen</td>
+                  <td>A</td>
+                  <td>991208887095</td>
+                  <td>English</td>
+                  <td>Engineer</td>
+                  <td>My Life</td>
+                  <td>Yes</td>
+                  <td>Yes</td>
+                  <td>Career Guidance</td>
+                  <td>Further Study</td>
+                  <td>5</td>
+              </tr>
+              <tr>
+                  <td>M. Sneha Latha</td>
+                  <td>D</td>
+                  <td>782934567981</td>
+                  <td>Maths</td>
+                  <td>Designer</td>
+                  <td>It’s My Passion and I Like to Do It</td>
+                  <td>Yes</td>
+                  <td>No</td>
+                  <td>Further Study</td>
+                  <td>5</td>
+              </tr>
+              <tr>
+                  <td>Tejaswi Kolanatti</td>
+                  <td>A</td>
+                  <td>655538357550</td>
+                  <td>English</td>
+                  <td>Nothing</td>
+                  <td>For Jobs and Salaries</td>
+                  <td>Maybe</td>
+                  <td>Yes</td>
+                  <td>Choose a Right Future and Career</td>
+                  <td>Further Study, Jobs</td>
+                  <td>4</td>
+              </tr>
+              <tr>
+                  <td>Pedamala Bhavya Sree</td>
+                  <td>A</td>
+                  <td>689716907273</td>
+                  <td>Physics</td>
+                  <td>Software</td>
+                  <td>To Improve Knowledge</td>
+                  <td>Yes</td>
+                  <td>Yes</td>
+                  <td>Guidance</td>
+                  <td>Further Study</td>
+                  <td>5</td>
+              </tr>
+              <tr>
+                  <td>M. Vyshnavi</td>
+                  <td>B</td>
+                  <td>346043766877</td>
+                  <td>Maths</td>
+                  <td>IPS</td>
+                  <td>To Service the People</td>
+                  <td>Yes</td>
+                  <td>No</td>
+                  <td>Pathway for Career</td>
+                  <td>Further Study</td>
+                  <td>4</td>
+              </tr>
+          </tbody>
+      </table>
+        
       </div>
-      <div class="st_wrap_table" data-table_id="1">
-        <header class="st_table_header">
-          <h2>Holy shit :@</h2>
-          <div class="st_row">
-            <div class="st_column _rank">Rank</div>
-            <div class="st_column _name">Name</div>
-            <div class="st_column _surname">Surname</div>
-            <div class="st_column _year">Year</div>
-            <div class="st_column _section">Section</div>
-          </div>
-        </header>
-        <div class="st_table">
-          <div class="st_row">
-            <div class="st_column _rank">0</div>
-            <div class="st_column _name">Jonas</div>
-            <div class="st_column _surname">Kunze</div>
-            <div class="st_column _year">2015</div>
-            <div class="st_column _section">Germany</div>
-          </div>
-          <div class="st_row">
-            <div class="st_column _rank">0</div>
-            <div class="st_column _name">Janina</div>
-            <div class="st_column _surname">Endres</div>
-            <div class="st_column _year">1955</div>
-            <div class="st_column _section">Belgium</div>
-          </div>
-          <div class="st_row">
-            <div class="st_column _rank">0</div>
-            <div class="st_column _name">Lena</div>
-            <div class="st_column _surname">Eifel</div>
-            <div class="st_column _year">1996</div>
-            <div class="st_column _section">Germany</div>
-          </div>
-          <div class="st_row">
-            <div class="st_column _rank">0</div>
-            <div class="st_column _name">John</div>
-            <div class="st_column _surname">Doe</div>
-            <div class="st_column _year">1973</div>
-            <div class="st_column _section">Germany</div>
-          </div>
-          <div class="st_row">
-            <div class="st_column _rank">0</div>
-            <div class="st_column _name">Max</div>
-            <div class="st_column _surname">Luke</div>
-            <div class="st_column _year">1971</div>
-            <div class="st_column _section">USA</div>
-          </div>
-          <div class="st_row">
-            <div class="st_column _rank">0</div>
-            <div class="st_column _name">Jonas</div>
-            <div class="st_column _surname">Nacht</div>
-            <div class="st_column _year">1968</div>
-            <div class="st_column _section">Swiss</div>
-          </div>
-          <div class="st_row">
-            <div class="st_column _rank">0</div>
-            <div class="st_column _name">Vanessa</div>
-            <div class="st_column _surname">Schneider</div>
-            <div class="st_column _year">2004</div>
-            <div class="st_column _section">Russia</div>
-          </div>
-          <div class="st_row">
-            <div class="st_column _rank">0</div>
-            <div class="st_column _name">laura</div>
-            <div class="st_column _surname">Beike</div>
-            <div class="st_column _year">1952</div>
-            <div class="st_column _section">Sweden</div>
-          </div>
+  </section>
+  <section id="about-team" style="display: none;">
+    <h2>About the Team</h2>
+    <div class="team-container">
+        <div class="team-member">
+            <img src="PIC12.jpg" alt="Team Member 1" class="team-image">
+            <p>Shaik Ayesha Siddqa</p>
         </div>
-      </div>
-      <div class="st_wrap_table" data-table_id="2">
-        <header class="st_table_header">
-          <h2>Isn't that nice</h2>
-          <div class="st_row">
-            <div class="st_column _rank">Rank</div>
-            <div class="st_column _name">Name</div>
-            <div class="st_column _surname">Surname</div>
-            <div class="st_column _year">Year</div>
-            <div class="st_column _section">Section</div>
-          </div>
-        </header>
-        <div class="st_table">
-          <div class="st_row">
-            <div class="st_column _rank">0</div>
-            <div class="st_column _name">Vanessa</div>
-            <div class="st_column _surname">Schneider</div>
-            <div class="st_column _year">2004</div>
-            <div class="st_column _section">Russia</div>
-          </div>
-          <div class="st_row">
-            <div class="st_column _rank">0</div>
-            <div class="st_column _name">laura</div>
-            <div class="st_column _surname">Beike</div>
-            <div class="st_column _year">1952</div>
-            <div class="st_column _section">Sweden</div>
-          </div>
-          <div class="st_row">
-            <div class="st_column _rank">0</div>
-            <div class="st_column _name">John</div>
-            <div class="st_column _surname">Doe</div>
-            <div class="st_column _year">1973</div>
-            <div class="st_column _section">Germany</div>
-          </div>
-          <div class="st_row">
-            <div class="st_column _rank">0</div>
-            <div class="st_column _name">Max</div>
-            <div class="st_column _surname">Luke</div>
-            <div class="st_column _year">1971</div>
-            <div class="st_column _section">USA</div>
-          </div>
-          <div class="st_row">
-            <div class="st_column _rank">0</div>
-            <div class="st_column _name">Jonas</div>
-            <div class="st_column _surname">Kunze</div>
-            <div class="st_column _year">2015</div>
-            <div class="st_column _section">Germany</div>
-          </div>
-          <div class="st_row">
-            <div class="st_column _rank">0</div>
-            <div class="st_column _name">Janina</div>
-            <div class="st_column _surname">Endres</div>
-            <div class="st_column _year">1955</div>
-            <div class="st_column _section">Belgium</div>
-          </div>
-          <div class="st_row">
-            <div class="st_column _rank">0</div>
-            <div class="st_column _name">Lena</div>
-            <div class="st_column _surname">Eifel</div>
-            <div class="st_column _year">1996</div>
-            <div class="st_column _section">Germany</div>
-          </div>
-          <div class="st_row">
-            <div class="st_column _rank">0</div>
-            <div class="st_column _name">Jonas</div>
-            <div class="st_column _surname">Nacht</div>
-            <div class="st_column _year">1968</div>
-            <div class="st_column _section">Swiss</div>
-          </div>
+        <div class="team-member">
+            <img src="PIC12.jpg" alt="Team Member 2" class="team-image">
+            <p>Himaja</p>
         </div>
-      </div>
-      <div class="st_wrap_table" data-table_id="3">
-        <header class="st_table_header">
-          <h2>Native STICKY</h2>
-          <div class="st_row">
-            <div class="st_column _rank">Rank</div>
-            <div class="st_column _name">Name</div>
-            <div class="st_column _surname">Surname</div>
-            <div class="st_column _year">Year</div>
-            <div class="st_column _section">Section</div>
-          </div>
-        </header>
-        <div class="st_table">
-          <div class="st_row">
-            <div class="st_column _rank">0</div>
-            <div class="st_column _name">John</div>
-            <div class="st_column _surname">Doe</div>
-            <div class="st_column _year">1973</div>
-            <div class="st_column _section">Germany</div>
-          </div>
-          <div class="st_row">
-            <div class="st_column _rank">0</div>
-            <div class="st_column _name">Lena</div>
-            <div class="st_column _surname">Eifel</div>
-            <div class="st_column _year">1996</div>
-            <div class="st_column _section">Germany</div>
-          </div>
-          <div class="st_row">
-            <div class="st_column _rank">0</div>
-            <div class="st_column _name">Jonas</div>
-            <div class="st_column _surname">Nacht</div>
-            <div class="st_column _year">1968</div>
-            <div class="st_column _section">Swiss</div>
-          </div>
-          <div class="st_row">
-            <div class="st_column _rank">0</div>
-            <div class="st_column _name">Vanessa</div>
-            <div class="st_column _surname">Schneider</div>
-            <div class="st_column _year">2004</div>
-            <div class="st_column _section">Russia</div>
-          </div>
-          <div class="st_row">
-            <div class="st_column _rank">0</div>
-            <div class="st_column _name">laura</div>
-            <div class="st_column _surname">Beike</div>
-            <div class="st_column _year">1952</div>
-            <div class="st_column _section">Sweden</div>
-          </div>
-          <div class="st_row">
-            <div class="st_column _rank">0</div>
-            <div class="st_column _name">Max</div>
-            <div class="st_column _surname">Luke</div>
-            <div class="st_column _year">1971</div>
-            <div class="st_column _section">USA</div>
-          </div>
-          <div class="st_row">
-            <div class="st_column _rank">0</div>
-            <div class="st_column _name">Jonas</div>
-            <div class="st_column _surname">Kunze</div>
-            <div class="st_column _year">2015</div>
-            <div class="st_column _section">Germany</div>
-          </div>
-          <div class="st_row">
-            <div class="st_column _rank">0</div>
-            <div class="st_column _name">Janina</div>
-            <div class="st_column _surname">Endres</div>
-            <div class="st_column _year">1955</div>
-            <div class="st_column _section">Belgium</div>
-          </div>
+        <div class="team-member">
+            <img src="PIC12.jpg" alt="Team Member 3" class="team-image">
+            <p>Geethika</p>
         </div>
-      </div>
-      <div class="st_wrap_table" data-table_id="4">
-        <header class="st_table_header">
-          <h2>CSS3 *~'</h2>
-          <div class="st_row">
-            <div class="st_column _rank">Rank</div>
-            <div class="st_column _name">Name</div>
-            <div class="st_column _surname">Surname</div>
-            <div class="st_column _year">Year</div>
-            <div class="st_column _section">Section</div>
-          </div>
-        </header>
-        <div class="st_table">
-          <div class="st_row">
-            <div class="st_column _rank">0</div>
-            <div class="st_column _name">John</div>
-            <div class="st_column _surname">Doe</div>
-            <div class="st_column _year">1973</div>
-            <div class="st_column _section">Germany</div>
-          </div>
-          <div class="st_row">
-            <div class="st_column _rank">0</div>
-            <div class="st_column _name">Max</div>
-            <div class="st_column _surname">Luke</div>
-            <div class="st_column _year">1971</div>
-            <div class="st_column _section">USA</div>
-          </div>
-          <div class="st_row">
-            <div class="st_column _rank">0</div>
-            <div class="st_column _name">Jonas</div>
-            <div class="st_column _surname">Kunze</div>
-            <div class="st_column _year">2015</div>
-            <div class="st_column _section">Germany</div>
-          </div>
-          <div class="st_row">
-            <div class="st_column _rank">0</div>
-            <div class="st_column _name">Jonas</div>
-            <div class="st_column _surname">Nacht</div>
-            <div class="st_column _year">1968</div>
-            <div class="st_column _section">Swiss</div>
-          </div>
-          <div class="st_row">
-            <div class="st_column _rank">0</div>
-            <div class="st_column _name">Vanessa</div>
-            <div class="st_column _surname">Schneider</div>
-            <div class="st_column _year">2004</div>
-            <div class="st_column _section">Russia</div>
-          </div>
-          <div class="st_row">
-            <div class="st_column _rank">0</div>
-            <div class="st_column _name">Janina</div>
-            <div class="st_column _surname">Endres</div>
-            <div class="st_column _year">1955</div>
-            <div class="st_column _section">Belgium</div>
-          </div>
-          <div class="st_row">
-            <div class="st_column _rank">0</div>
-            <div class="st_column _name">Lena</div>
-            <div class="st_column _surname">Eifel</div>
-            <div class="st_column _year">1996</div>
-            <div class="st_column _section">Germany</div>
-          </div>
-          <div class="st_row">
-            <div class="st_column _rank">0</div>
-            <div class="st_column _name">laura</div>
-            <div class="st_column _surname">Beike</div>
-            <div class="st_column _year">1952</div>
-            <div class="st_column _section">Sweden</div>
-          </div>
-        </div>
-      </div>
-    </section>
+    </div>
+</section>
   
   
   
