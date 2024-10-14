@@ -35,7 +35,7 @@ function hideTitles() {
 
 // Function to hide all sections
 function hideAllSections() {
-  const sections = [surveydetailsSection, questionnairesSection, gallerySection, aboutContent];
+  const sections = [surveydetailsSection, questionnairesSection, gallerySection, aboutContent, analysisSection];
   sections.forEach(section => {
     if (section) {
       section.style.display = "none"; // Hide all sections
@@ -52,7 +52,7 @@ if (surveydetailsLink && surveydetailsSection) {
   surveydetailsLink.addEventListener('click', function(event) {
     aboutContent.style.display = "none"; // Hide about content
     questionnairesSection.style.display = "block"; // Show questionnaires section
-    buttonContainer.style.display = "none"; 
+    
     event.preventDefault();
     hideAllSections();
     hideTitles(); // Hide titles when selecting Survey Details
@@ -145,6 +145,7 @@ const buttonContainer = document.querySelector(".button-container");
       aboutContent.style.display = "block"; // Show about content
       buttonContainer.style.display = "none"; // Hide button container
       questionnairesSection.style.display = "none";
+      hideTitles();
   });
 
   // Event listener for the "Back" button
@@ -173,4 +174,20 @@ if (aboutTeamBtn && aboutTeamSection) {
     });
 } else {
     console.error("About Team button or section not found!");
+}
+const analysisLink = document.getElementById("analysis-link");
+const analysisSection = document.getElementById("analysis-section");
+
+if (analysisLink && analysisSection) {
+  analysisLink.addEventListener("click", function(event) {
+    event.preventDefault();
+    hideTitles();
+    hideAllSections(); // Hide other sections
+    analysisSection.style.display = "block"; // Show the analysis section
+    analysisSection.classList.add('active');
+    dropdownContent.classList.remove("show"); // Hide dropdown
+    changeMainContentBackgroundToWhite(); // Optional: Change background to white
+  });
+} else {
+  console.error("Analysis link or section not found!");
 }

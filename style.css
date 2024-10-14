@@ -221,6 +221,8 @@ a {
 
 p {
   margin-top: 0.7em;
+  margin-left: 20px;
+  font-size: 40px;
 }
 
 .warning {
@@ -348,4 +350,40 @@ td {
 
 .team-image:hover {
   transform: scale(1.05); /* Slightly enlarge image on hover */
+}
+.analysis-container {
+  display: flex;
+  flex-direction: column; /* Images in a single column */
+  align-items: center; /* Center the images horizontally */
+  margin-top: 20px;
+}
+
+.analysis-image-row {
+  margin-bottom: 20px; /* Space between rows */
+}
+
+.analysis-image {
+  width: 100%; /* Make the image full width */
+  max-width: 800px; /* Restrict maximum size of the image */
+  height: auto; /* Keep image aspect ratio */
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+  transition: transform 0.3s; /* Hover effect */
+}
+
+.analysis-image:hover {
+  transform: scale(1.05); /* Enlarge the image slightly on hover */
+}
+#analysis-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Vertically center */
+  align-items: center; /* Horizontally center */
+  height: 100vh; /* Full viewport height */
+  text-align: center; /* Center the heading text */
+}
+
+.analysis-container {
+  display: flex;
+  flex-direction: column; /* Stack images vertically */
+  align-items: center; /* Center the images horizontally */
 }
